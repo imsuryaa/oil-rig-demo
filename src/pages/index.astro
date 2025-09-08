@@ -1,16 +1,24 @@
 ---
-
+import "../styles/global.css";
+import AddRigForm from "../components/AddRigForm";
+import RigList from "../components/RigList";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <title>Oil Rig Dashboard</title>
+  </head>
+  <body class="bg-gray-100 min-h-screen p-6">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold mb-6 text-center">Oil Rig Dashboard</h1>
+
+      <!-- Form at the top -->
+      <div class="mb-8">
+        <AddRigForm client:load />
+      </div>
+
+      <!-- Rig list grid -->
+      <RigList client:load />
+    </div>
+  </body>
 </html>
