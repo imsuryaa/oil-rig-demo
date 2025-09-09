@@ -1,3 +1,8 @@
+
+## Demo Link
+Check the live site here 👉 [Oil Rig](https://oil-rig-demo.vercel.app)
+
+
 # Astro Starter Kit: Minimal
 
 ```sh
